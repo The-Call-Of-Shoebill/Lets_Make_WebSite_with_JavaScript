@@ -1,0 +1,32 @@
+#index .container {
+    display: flex;
+    padding: 0 2rem;
+  }
+  
+  #index .container .blogItem {
+    padding: 1rem;
+    width: 30%;
+  }
+  
+  #index .container .blogItem .title {
+    font-weight: bold;
+  }
+  
+  #index .container img {
+    max-width: 100%;
+  }
+  
+  #blog {
+    padding: 0 1rem;
+  }
+  
+  #blog img {
+    max-width: 100%;
+  }
+  
+  #blog .blogLink {
+    display: block;
+    margin: 3.0rem auto;
+    text-align: center;
+  }
+  
