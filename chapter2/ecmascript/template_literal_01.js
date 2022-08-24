@@ -1,3 +1,3 @@
-let language = `javascript\njavascript\njavascript`;
+let language = `JavaScript\nJavaScript\nJavaScript`;
 
-console.log(language);   //javascript\njavascipt\njavascript
+console.log(language);   //JavaScript\nJavaScript\nJavaScript
