@@ -9,7 +9,7 @@ const deleteEmptyElement = (_array) => {
 }
 
 const returnPostURL = (url) => {
-	const retURL = url.replace( 'http://10.10.10.173/appendix/wordpress/index.php', '' )
+	const retURL = url.replace( process.env.site_IP_Address + 'lmw/chapter7/wordpress/index.php', '' )
 	return retURL
 }
 
@@ -51,10 +51,10 @@ const Blog = (props) => {
 }
 
 export const getStaticProps = async (paths) => {
-	const current = 'http://10.10.10.173/appendix/wordpress/index.php/' + paths.params.blog.join('/') + '/'
+	const current = process.env.site_IP_Address + 'lmw/chapter7/wordpress/index.php/' + paths.params.blog.join('/') + '/'
 
 	try {
-		const res = await axios.get('http://10.10.10.173/appendix/wordpress/index.php/wp-json/wp/v2/posts')
+		const res = await axios.get(process.env.site_IP_Address + 'lmw/chapter7/wordpress/index.php/wp-json/wp/v2/posts')
 		const returnData = res.data.find(value => value.link == current)
 
 		return {
@@ -69,7 +69,7 @@ export const getStaticProps = async (paths) => {
 
 export const getStaticPaths = async () => {
 	try {
-		const res = await axios.get('http://10.10.10.173/appendix/wordpress/index.php/wp-json/wp/v2/posts')
+		const res = await axios.get(process.env.site_IP_Address + 'lmw/chapter7/wordpress/index.php/wp-json/wp/v2/posts')
 		const returnData = res.data
 
 		return {

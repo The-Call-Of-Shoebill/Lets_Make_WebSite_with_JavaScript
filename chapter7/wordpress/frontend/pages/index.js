@@ -2,7 +2,7 @@ import BlogPost from '../components/Blog/BlogPost'
 import axios from 'axios'
 
 const returnPostURL = (url) => {
-	const retURL = url.replace( 'http://10.10.10.173/appendix/wordpress/index.php', '/posts' )
+	const retURL = url.replace( process.env.site_IP_Address + 'lmw/chapter7/wordpress/index.php', '/posts' )
 	return retURL
 }
 
@@ -26,7 +26,7 @@ const Home = (props) => {
 
 export const getStaticProps = async () => {
 	try {
-		const res = await axios.get('http://10.10.10.173/appendix/wordpress/index.php/wp-json/wp/v2/posts')
+		const res = await axios.get( process.env.site_IP_Address + 'lmw/chapter7/wordpress/index.php/wp-json/wp/v2/posts')
 		const data = res.data
 
 		return {

@@ -8,6 +8,7 @@ const nextConfig = {
   },
   env: {
     pathDirectory: process.cwd() + '/content',
+    site_IP_Address: 'http://10.10.10.173/',
   }
 }
 
