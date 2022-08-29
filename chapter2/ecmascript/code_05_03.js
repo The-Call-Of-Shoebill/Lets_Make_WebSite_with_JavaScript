@@ -1,8 +1,8 @@
 function add_03 () {
-    const judge = true;
+    const pass = true;
     const a = 10;
 
-    if (judge) {
+    if (pass) {
         const b = 100;
     }
 

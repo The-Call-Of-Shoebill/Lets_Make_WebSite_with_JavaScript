@@ -1,8 +1,8 @@
 function add_01 () {
-    var judge = true;
+    var pass = true;
     var a = 10;
 
-    if (judge) {
+    if (pass) {
         var b = 100;
     }
 

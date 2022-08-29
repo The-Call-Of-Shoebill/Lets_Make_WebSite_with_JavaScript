@@ -1,8 +1,8 @@
 function add_02 () {
-    let judge = true;
+    let pass = true;
     let a = 10;
 
-    if (judge) {
+    if (pass) {
         let b = 100;
     }
 
